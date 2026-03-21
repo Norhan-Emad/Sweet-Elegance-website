@@ -1,0 +1,185 @@
+@media (max-width: 575.98px){
+  footer h4{
+    font-size: 20px !important;
+    margin-bottom: 0 !important;
+    height:auto !important;
+  }
+}
+@media (max-width: 767.98px) {
+  footer h4{
+    font-size: 24px;
+    margin-bottom: 0 !important;
+    height:auto !important;
+  }
+}
+
+/* //////////////////global style///////// */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --backgroundColor:#FDF8F5;
+    --background2:#FFF3E6;
+    --maincolor:#F6C1CF;
+    --dustyRose:#E8A9B8;
+    --strawberryCream:#F28CA3;
+    --mintFrosting:#CFE8D5;
+    --caramelBrown:#8B5E3C;
+    --primaryheading:#5E3A2A;
+    --bodyText:#7A5C4D;
+    --paragraph:#A07C6B;
+    --softGold:hsl(54, 100%, 55%);
+}
+body{
+  background-color: var(--backgroundColor);
+  font-family: "Inter", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--primaryheading) !important;
+  font-family: "DM Serif Display", serif;
+}
+p{
+  color: var(--paragraph);
+}
+.carmelBrown{
+  color: var(--caramelBrown);
+}
+.softGold{
+  color: var(--softGold);
+}
+.strawberryCream{
+  color:var(--strawberryCream);
+}
+
+.bg-color{
+  background-color: var(--backgroundColor);
+}
+/* design system */
+
+
+/* nav */
+#nav{
+  display: flex;
+  justify-content: center;
+}
+.navbar{
+  width: 98% !important;
+}
+
+.navbar #logOut{
+  color: var(--strawberryCream);
+  background-color: transparent;
+  border: 2px solid var(--strawberryCream);
+}
+
+#search{
+  width: 60%;
+  margin-inline: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 2px solid var(--maincolor);
+  padding: 8px;
+  color: var(--caramelBrown);
+}
+#search:focus{
+  border: 2px solid var(--strawberryCream);
+  box-shadow: 2px 2px 15px #F6C1CF;
+  outline: none;
+}
+#search::placeholder{
+  color: var(--caramelBrown);
+  opacity: 0.6;
+}
+
+/* slider */
+#slider{
+  position: relative;
+}
+
+#slider img,
+#slider .caption{
+  height: 100dvh;
+}
+#slider .caption .carousel-cap{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.66);
+border-radius: 20px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+  
+}
+
+  .Btn{
+  background-color: #ef597c;
+  color: white;
+  transition: 0.6s;
+}
+  .Btn:hover{
+  background-color: #ed305c;
+  color: white;
+  transform: scale(1.1);
+}
+  .carousel-indicators [data-bs-target]{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-indent: 0;
+  }
+
+  .tab img{
+    width: 50px;
+    height: 50px !important;
+    border-radius: 50%;
+  }
+/* //////////////Home/////// */
+
+#Home .buttons{
+  width: 100%;
+}
+#Home .cart {
+  color: var(--strawberryCream) !important;
+}
+
+#Home #price{
+  color:mediumseagreen !important;
+}
+
+#Home .buttons #knowMore{
+  width: 80%;
+  background-color: var(--strawberryCream);
+  color: white;
+}
+
+
+
+#Home .buttons #Add{
+  color: var(--strawberryCream);
+  background-color: transparent;
+  border: 2px solid var(--strawberryCream);
+}
+
+
+#Home #cards img{
+  width: 100%;
+  height: 300px;
+}
+
+#Home #knowMore:hover,
+#Home .buttons #Add:hover{
+    background-color: #ef597c;
+    border: none;
+    box-shadow: 2px 2px 15px #F6C1CF;
+    outline: none;
+    color: white;
+}
+
+#alertBox{
+  z-index: 9999;
+}

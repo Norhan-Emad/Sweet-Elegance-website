@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../images/ChatGPT_Image_Feb_21__2026__05_22_53_PM-removebg-preview.png"
+      type="image/x-icon"
+    />
+    <!--///////////// fonts//////////////// -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- /////////////font awesome /////////////////// -->
+    <script
+      src="https://kit.fontawesome.com/e9a68c4ebb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- //////////////////bootstrap////////// -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- ////////////////////css///////////////// -->
+    <link rel="stylesheet" href="../css/cart.css" />
+    <title>Sweet Elegance</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg pt-3" style="height: 80px">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand" href="/html/index.html">
+            <img
+              src="../images/ChatGPT_Image_Feb_21__2026__05_22_53_PM-removebg-preview.png"
+              alt="logo"
+              style="width: 120px;"
+            />
+          </a>
+          <a href="./home.html" class="btn rounded-circle fs-6 d-flex justify-content-center align-items-center" id="back"> <i class="fa-solid fa-caret-left fs-4"></i></a>
+          </div>
+      </nav>
+    </header>
+    <main>
+      <section id="cart">
+        <div class="container">
+          <div class="row" id="cardsCart" >
+        </div>
+        <div class="row">
+          <div class="col-md-12 mt-0 rounded-2 d-flex justify-content-center align-items-center py-4 ">
+                  <div class="card-body">
+                                    <div class="order summery">
+                                        <h4 class="card-title mb-2">Order Summery:</h4>
+                                    </div>
+                                    <p id="items" class="fs-5 mb-1">Number of items :</p>
+                                    <p class="card-text fs-5 mb-1" id="subtotal">subTotal :</p>
+                                    <p id="discount" class="fs-5 mb-1" >Discount: 5%</p>
+                                    <h4 id="Total">Total:</h4>
+                                    <div class="buttons d-flex justify-content-between align-items-center mt-3">
+                                        <button class="btn rounded-2 fs-6 w-50 m-auto bg-danger" id="Checkout">Checkout</button>
+                                    </div>
+                </div>
+                </div>
+        </div>
+        </div>
+      </section>
+    </main>
+    
+    <!-- ///////////////////bootstrap js////////////// -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- ///////////////////////js///////////// -->
+    <script src="../js/cart.js"></script>
+  </body>
+</html>

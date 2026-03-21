@@ -1,0 +1,128 @@
+/* media query */
+
+@media (max-width: 767.98px) {
+#cart #cardsCart img{
+    position: relative !important;
+    width: 100% !important;
+    height: 250px !important;
+    margin-bottom: 10px;
+}
+.row{
+  margin-inline: 5px;
+}
+.col-md-9{
+  padding-inline: 0 !important;
+}
+}
+/* //////////////////global style///////// */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --backgroundColor:#FDF8F5;
+    --background2:#FFF3E6;
+    --maincolor:#F6C1CF;
+    --dustyRose:#E8A9B8;
+    --strawberryCream:#F28CA3;
+    --mintFrosting:#CFE8D5;
+    --caramelBrown:#8B5E3C;
+    --primaryheading:#5E3A2A;
+    --bodyText:#7A5C4D;
+    --paragraph:#A07C6B;
+    --softGold:hsl(54, 100%, 55%);
+}
+body{
+  background-color: var(--backgroundColor);
+  font-family: "Inter", sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+  color: var(--primaryheading) !important;
+  font-family: "DM Serif Display", serif;
+}
+p{
+  color: var(--paragraph);
+}
+.carmelBrown{
+  color: var(--caramelBrown);
+}
+.softGold{
+  color: var(--softGold);
+}
+.strawberryCream{
+  color:var(--strawberryCream);
+}
+
+#back{
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid #F28CA3;
+  color: var(--strawberryCream);
+  transition: 0.3s;
+}
+
+#back:hover{
+  color: white;
+  background-color: #ef597c;
+  transform: scale(1.2);
+}
+
+#cart{
+    margin-top: 40px;
+}
+
+#cart #cardsCart .card{
+    height: auto;
+    position: relative;
+}
+
+#cart #cardsCart img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23%;
+    height: 100%;
+}
+
+#cart #price{
+  color:mediumseagreen !important;
+}
+
+#cart .buttons #knowMore,
+#cart #Checkout{
+  background-color: var(--strawberryCream);
+  color: white;
+}
+
+#cart .fa-plus,
+#cart .fa-minus{
+    width: 30px;
+    height: 30px;
+    background-color: var(--strawberryCream);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cart #edit:focus{
+    border: none;
+}
+
+#cart .fa-plus:focus,
+#cart .fa-minus:focus,
+#cart .fa-minus:hover,
+#cart .fa-plus:hover,
+#cart #knowMore:hover{
+    background-color: #ef597c;
+    border: none;
+    box-shadow: 2px 2px 15px #F6C1CF;
+    outline: none;
+}
