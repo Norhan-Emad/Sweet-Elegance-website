@@ -6,7 +6,6 @@ var alert = document.getElementById("alert");
 
 console.log(list);
 
-
 logIn.addEventListener("click", function (e) {
   submit();
 });
@@ -16,26 +15,26 @@ function submit() {
   var passwordValue = password.value;
   for (i = 0; i < list.length; i++) {
     if (
-        emailValue == list[i].userEmail &&
-        passwordValue == list[i].userPassword
+      emailValue == list[i].userEmail &&
+      passwordValue == list[i].userPassword
     ) {
-      localStorage.setItem("isVisted", true);
-        logIn.setAttribute("href", "../home.html");
-        alert.classList.add('d-none');
+      localStorage.setItem("isVisited", "true"); //
+      logIn.setAttribute("href", "../home.html");
+      alert.classList.add("d-none");
+    } else {
+      alert.classList.remove("d-none");
+      alert.innerHTML = "Incorrect email or password";
+      logIn.removeAttribute("href");
     }
-    else{
-        alert.classList.remove("d-none");
-        alert.innerHTML = "Incorrect email or password";
-        logIn.removeAttribute("href");
-    }
-    }
+  }
 }
 
 if (!localStorage.getItem("isVisited")) {
+  //
   // First time → show loader
   setTimeout(() => {
     document.getElementById("start").style.display = "none";
-  }, 9000);
+  }, 7000);
 
   // Save that user has visited
   localStorage.setItem("isVisited", "true");
