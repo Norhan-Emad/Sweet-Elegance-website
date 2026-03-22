@@ -194,7 +194,7 @@ function showData() {
                                     <p class="card-text lead fs-6 mt-1 mb-0">${cakeProducts[i].description}</p>
                                     <p id="tages" class="my-1">${cakeProducts[i].tags}</p>
                                     <p id="stars"><i class="fa-solid fa-star softGold my-0"></i><i class="fa-solid fa-star-half-stroke softGold"></i><span id="rating" class="ps-1 fs-6">${cakeProducts[i].rating}</span></p>
-                                    <div class="buttons">
+                                    <div class="buttons d-flex justify-content-between align-align-items-center">
                                         <button class="btn rounded-2 fs-6" id="knowMore">Know More</button>
                                         <button class="btn rounded-2 fs-6" id="Add" onclick="addItem(${i}) , showAlert()"><i class="fa-solid fa-plus"></i></button>
                                     </div>
