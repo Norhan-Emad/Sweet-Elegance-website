@@ -19,7 +19,7 @@ function submit() {
       passwordValue == list[i].userPassword
     ) {
       localStorage.setItem("isVisited", "true"); //
-      logIn.setAttribute("href", "../home.html");
+      logIn.setAttribute("href", "./home.html");
       alert.classList.add("d-none");
     } else {
       alert.classList.remove("d-none");
