@@ -148,5 +148,5 @@ signUpButton.addEventListener("click" , function(){
 })
 
 backLogin.addEventListener('click', function(){
-  window.location.href = "../html/index.html";
+  window.location.href = "../index.html";
 })
